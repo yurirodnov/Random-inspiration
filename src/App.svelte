@@ -6,7 +6,4 @@
   <Hello />
 </main>
 
-<style>
-  
-  
-</style>
+
