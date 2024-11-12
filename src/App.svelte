@@ -1,11 +1,11 @@
 <script lang="ts">  
   import Hello from './lib/Hello.svelte'
-  import GetQuotes from './lib/api/GetQuotes.svelte';
+  import GetQuoteButton from './lib/ui/buttons/GetQuoteButton.svelte';
+  
 </script>
 
 <main>
-  <Hello />
-  <GetQuotes />
+  <GetQuoteButton />  
 </main>
 
 
