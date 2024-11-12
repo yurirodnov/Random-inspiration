@@ -1,5 +1,5 @@
 <script>
-  import { quoteState } from "../../store/store";
+  import { quoteState, authorState } from "../../store/store";
   import { getQuote } from "../../api/getQuote";
 
 </script>
@@ -7,5 +7,6 @@
 
 <div class="quotes">
 	<button on:click={getQuote}>Get quote!</button>
-  <p>{quoteState?.quote}</p>
+  <p>{$quoteState}</p>
+  <p>{$authorState}</p>
 </div>
