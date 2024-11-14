@@ -10,7 +10,7 @@
 
   h1 {
     font-family: Arial, Helvetica, sans-serif;
-    color: beige;
+    color: rgb(255, 255, 255);
   }
 
 </style>
