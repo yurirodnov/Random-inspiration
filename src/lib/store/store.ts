@@ -1,7 +1,7 @@
 import { writable } from 'svelte/store';
 
-export const quoteState = writable<{ quote: string }>({ quote: "Hello" })
-export const authorState = writable<{ author: string }>({ author: "World" })
+export const quoteState = writable<string>("Hello")
+export const authorState = writable<string>("World")
 
 // export functions to access or mutate user
 export const setQuote = (data: any) => {
