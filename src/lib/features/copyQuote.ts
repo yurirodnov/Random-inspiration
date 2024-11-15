@@ -1,4 +1,4 @@
-import { quoteState, authorState } from "../store/store";
+import { quoteState, authorState } from "../store/quoteState";
 import { get } from "svelte/store";
 
 export const copyQuote = () => {

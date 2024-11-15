@@ -1,7 +1,8 @@
 import { writable } from 'svelte/store';
 
-const defaultQuote = "The future depends on what you do today";
-const defaultAuthor = "Mahatma Gandhi"
+const defaultQuote: string = "The future depends on what you do today";
+const defaultAuthor: string = "Mahatma Gandhi"
+
 
 export const quoteState = writable<string>(defaultQuote)
 export const authorState = writable<string>(defaultAuthor)

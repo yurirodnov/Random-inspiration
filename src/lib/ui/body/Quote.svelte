@@ -1,5 +1,5 @@
 <script>
-  import { quoteState, authorState } from "../../store/store";
+  import { quoteState, authorState } from "../../store/quoteState";
 </script>
 
 <style>
@@ -14,13 +14,13 @@
 
   .quote {
     color: rgb(255, 255, 255);
-    height: 80px;
-    font-size: 2em;
+    height: 60px;
+    font-size: 1.8em;
   }
 
   .author {
     color: rgb(162, 162, 162);
-    font-size: 1.5em;
+    font-size: 1.4em;
   }
 
 </style>

@@ -1,7 +1,12 @@
-<script>
-  import { quoteState, authorState } from "../../store/store";
-  import { getQuote } from "../../api/getQuote";
+<script>  
   import { copyQuote } from "../../features/copyQuote";
+  import { triggerNotification } from "../../store/notificationState";
+
+  const handleCopyClick = () => {
+    copyQuote();
+    triggerNotification();
+
+  }
 </script>
 
 <style>
@@ -24,5 +29,5 @@
   }
 </style>
 
-<button on:click={copyQuote}>Copy quote</button>
+<button on:click={handleCopyClick}>Copy quote</button>
 

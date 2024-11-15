@@ -1,5 +1,5 @@
 import axios from "axios";
-import { setQuote } from "../store/store";
+import { setQuote } from "../store/quoteState";
 
 const quoteApiURL: string = "/random";
 
