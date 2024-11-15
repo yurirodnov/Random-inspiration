@@ -1,5 +1,4 @@
-<script>
-  import { quoteState, authorState } from "../../store/store";
+<script>  
   import { getQuote } from "../../api/getQuote";
 </script>
 

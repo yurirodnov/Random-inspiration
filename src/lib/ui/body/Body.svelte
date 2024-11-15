@@ -1,5 +1,5 @@
-<script lang="ts">
-  import GetQuoteButton from "../buttons/GetQuoteButton.svelte";
+<script lang="ts">  
+  import ButtonsWrapper from "../buttons/ButtonsWrapper.svelte";
   import Quote from "./Quote.svelte";
 </script>
 
@@ -18,5 +18,5 @@
 
 <div class="body">
   <Quote />
-  <GetQuoteButton />
+  <ButtonsWrapper />
 </div>
