@@ -14,6 +14,7 @@
 
   .quote {
     color: rgb(255, 255, 255);
+    height: 80px;
     font-size: 2em;
   }
 
