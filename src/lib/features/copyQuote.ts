@@ -10,13 +10,15 @@ export const copyQuote = () => {
   const copyContent = async () => {
     try {
       await navigator.clipboard.writeText(formattedQuote);
-      console.log('Content copied to clipboard');
+      console.log(`Скопировано: ${formattedQuote}`);
     } catch (err) {
       console.error('Failed to copy: ', err);
     }
   }
 
   copyContent();
+
+  //console.log('Copied!')
 }
 
 

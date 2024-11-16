@@ -1,18 +1,17 @@
-<script>
+<script lang="ts">
+  import { get } from "svelte/store";
   import { copyNotificationState } from "../../store/notificationState";
-  import { get } from "svelte/store"; 
-
-  const notificationCondition = get(copyNotificationState);
+  
+  
+  
 </script>
 
 <style>
-  .quote-notification {
-    
+  .quote-notification {    
     position: absolute;
     right: 20px;
     bottom: 20px;
-    padding: 10px;
-    border: 2px solid white;
+    padding: 10px;    
     color: white;
     font-size: 1.5em;
     font-family: Arial, Helvetica, sans-serif;
@@ -22,4 +21,7 @@
 
 
 
-<div class="quote-notification" style="display: {notificationCondition ? "flex" : "none"}">Copied</div>
+
+{#if $copyNotificationState}
+  <div class="quote-notification">Copied</div>
+{/if}
