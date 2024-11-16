@@ -1,15 +1,12 @@
 <script>  
   import { copyQuote } from "../../features/copyQuote";
   import { triggerNotification } from "../../store/notificationState";
-  import { copyNotificationState } from "../../store/notificationState";
-  import { get } from "svelte/store"; 
-  const isVisible = get(copyNotificationState)
+  
 
-  const handleCopyClick = () => { 
-    console.log(isVisible)   
+  const handleCopyClick = () => {        
     copyQuote();
     triggerNotification();
-    console.log(isVisible)
+    
   }
 
 </script>

@@ -17,8 +17,6 @@ export const copyQuote = () => {
   }
 
   copyContent();
-
-  //console.log('Copied!')
 }
 
 

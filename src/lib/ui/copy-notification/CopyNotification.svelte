@@ -1,5 +1,4 @@
-<script lang="ts">
-  import { get } from "svelte/store";
+<script lang="ts">  
   import { copyNotificationState } from "../../store/notificationState";
   
   
